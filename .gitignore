@@ -1,3 +1,6 @@
 DC_STORE
 node_modules
 .env
+.eslintrc.js
+.Babelrc
+npm-debug.log
