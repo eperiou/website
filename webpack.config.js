@@ -12,10 +12,6 @@ const config = {
     filename: 'myCode.js',
   },
   module: {
-    // loaders: [{
-    //   include: DEV,
-    //   loader: 'babel-loader',
-    // }],
     rules: [
       {
         test: /\.(js|jsx)$/, // Check for all js files
@@ -32,10 +28,6 @@ const config = {
           'sass-loader',
         ],
       },
-    //   {
-    //     test: /\.json$/,
-    //     loader: 'json-loader',  //JSON loader
-    //   },
     ],
   },
   devServer: {
