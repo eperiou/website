@@ -16,20 +16,24 @@ const Nav = () => (
           <span className="icon-bar" />
           <span className="icon-bar" />
         </button>
-        <a className="navbar-brand" href="#">Brand</a>
+        <div
+          className="navbar-brand realdeallogo"
+          href="http://www.real-deal.studio/#/home"
+        />
       </div>
 
       <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul className="nav navbar-nav">
           <li className="active">
-            <a href="#">Link <span className="sr-only">(current)</span></a>
+            <a href="#">Portfolio <span className="sr-only">(current)</span></a>
           </li>
-          <li><a href="#">Link</a></li>
+          <li><a href="#">Personal</a></li>
         </ul>
         <ul className="nav navbar-nav navbar-right">
           <li><a href="#">Link</a></li>
           <li className="dropdown">
-            <a href="#"
+            <a
+              href="#"
               className="dropdown-toggle"
               data-toggle="dropdown"
               role="button"
@@ -43,7 +47,7 @@ const Nav = () => (
               <li><a href="#">Action</a></li>
               <li><a href="#">Another action</a></li>
               <li><a href="#">Something else here</a></li>
-              <li role="separator" className="divider"></li>
+              <li role="separator" className="divider" />
               <li><a href="#">Separated link</a></li>
             </ul>
           </li>

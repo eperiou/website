@@ -1,11 +1,12 @@
 import React from 'react';
 import Nav from './Nav/nav.jsx';
+import JumboTron from './Splashpage/JumboTron.jsx';
 
 const App = () => (
-  <body>
+  <section>
     <Nav />
-    <h1>Herro dere</h1>;
-  </body>
+    <JumboTron />;
+  </section>
 );
 
 export default App;

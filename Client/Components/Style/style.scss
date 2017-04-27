@@ -1,6 +1,27 @@
-.main {
-  color: red;
+.realdeallogo {
+   background-image: url("../assets/real-deal-logo.png");
+   background-size: cover;
+   width: 50px;
 }
-.thing2 {
-  color:blue;
+a {
+  font-size: "xx-large"; }
+.jumbotron{
+  background-image: url(https://scontent-dft4-2.xx.fbcdn.net/v/t31.0-8/11062428_10105231845571565_3157298149122899086_o.jpg?oh=ad12ce7c659d31a621fc2756498050d3&oe=59760BC5);
+  height: 50em;
+  width: 100%;
+  opacity: .7;
+  background-size: cover;
+
+  h1 {
+    text-align: -webkit-right;
+    margin-top: 25%;
+    text-shadow: 2px 2px #f5f5f5;
+    color: rgba(88, 70, 180, 0.66);
+  }
+
+  h2 {
+    text-align: -webkit-right;
+    text-shadow: 2px 2px #f5f5f5;
+    color: rgba(88, 70, 180, 0.66);
+  }
 }
