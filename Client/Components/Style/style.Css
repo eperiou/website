@@ -12,14 +12,16 @@ a {
   width: 100%;
   opacity: .7;
   background-size: cover; }
-  .jumbotron h1 {
-    text-align: -webkit-right;
+  .jumbotron .jumbotext {
+    text-align: right;
     margin-top: 25%;
     text-shadow: 2px 2px #f5f5f5;
+    color: plum;
     color: rgba(88, 70, 180, 0.66); }
-  .jumbotron h2 {
-    text-align: -webkit-right;
+  .jumbotron .jumbotext2 {
+    text-align: right;
     text-shadow: 2px 2px #f5f5f5;
+    color: plum;
     color: rgba(88, 70, 180, 0.66); }
 
 /*# sourceMappingURL=style.css.map */
