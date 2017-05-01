@@ -26,8 +26,23 @@ a {
   }
 }
 .navbar {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   a {
     font-size: 2em;
   }
+}
+.presentationblocks {
+  text-align: center;
+  .presentationtitle {
+
+  }
+  .presentblock {
+    margin-left: 4%;
+    width: 28%
+  }
+}
+
+main {
+  width: 90%;
+  margin-left: 5%;
 }
