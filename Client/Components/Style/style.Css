@@ -24,4 +24,9 @@ a {
     color: plum;
     color: rgba(88, 70, 180, 0.66); }
 
+.navbar {
+  margin-bottom: 0px; }
+  .navbar a {
+    font-size: 2em; }
+
 /*# sourceMappingURL=style.css.map */

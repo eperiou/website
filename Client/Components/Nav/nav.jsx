@@ -16,10 +16,15 @@ const Nav = () => (
           <span className="icon-bar" />
           <span className="icon-bar" />
         </button>
-        <div
-          className="navbar-brand realdeallogo"
-          href="http://www.real-deal.studio/#/home"
-        />
+        <form
+          action="http://www.real-deal.studio"
+          method="GET"
+        >
+          <button
+            type="submit"
+            className="navbar-brand realdeallogo"
+          />
+        </form>
       </div>
 
       <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
