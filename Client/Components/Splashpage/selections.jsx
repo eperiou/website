@@ -3,7 +3,7 @@ import React from 'react';
 const Selections = () => (
   <article className="row presentationblocks">
     <div className="presentationtitle">
-      <p>Me in a nutshellasdfasdfasdf asdfs dafdsa df</p>
+      <p>Me in a nutshell</p>
     </div>
     <div className="col-md-3 presentblock">
       <div className="thumbnail">

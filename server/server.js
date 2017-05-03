@@ -11,7 +11,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 
-app.use(express.static(Path.join(__dirname, '../Client')));
+app.use(express.static(Path.join(__dirname, '../Client/Output')));
 
 // app.get('/', (req, res) => {
 //   res.send('Hello');

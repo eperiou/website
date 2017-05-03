@@ -25,8 +25,18 @@ a {
     color: rgba(88, 70, 180, 0.66); }
 
 .navbar {
-  margin-bottom: 0px; }
+  margin-bottom: 0; }
   .navbar a {
     font-size: 2em; }
+
+.presentationblocks {
+  text-align: center; }
+  .presentationblocks .presentblock {
+    margin-left: 4%;
+    width: 28%; }
+
+main {
+  width: 90%;
+  margin-left: 5%; }
 
 /*# sourceMappingURL=style.css.map */

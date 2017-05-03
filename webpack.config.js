@@ -1,5 +1,7 @@
-const webpack = require('webpack');
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const DEV = path.resolve(__dirname, 'Client/Components');
 const OUTPUT = path.resolve(__dirname, 'Client/Output');
@@ -7,6 +9,7 @@ const OUTPUT = path.resolve(__dirname, 'Client/Output');
 const config = {
   context: path.join(__dirname, './Client'),
   entry: `${DEV}/index.jsx`,
+  // entry: path.resolve(__dirname, 'Client/index.html'),
   output: {
     path: OUTPUT,
     filename: 'myCode.js',
@@ -26,14 +29,39 @@ const config = {
           'style-loader',
           'css-loader',
           'sass-loader',
+          'url-loader',
+          'file-loader',
         ],
+      },
+      {
+        test: /\.html$/, // Check for sass or scss file names
+        use: [
+          'html-loader',
+        ],
+      },
+      {
+        test: /\.png$/,
+        use: [{
+          loader: 'file-loader',
+        }],
       },
     ],
   },
   devServer: {
-    contentBase: DEV,
+    contentBase: path.resolve(__dirname, 'Client'),
+    compress: true,
   },
-  devtool: 'eval-source-map',
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin(),
+    new ExtractTextPlugin('styles.css'),
+    new HtmlWebpackPlugin({
+      title: 'My App',
+      filename: path.resolve(OUTPUT, 'index.html'),
+      template: 'index.html',
+      inject: true,
+    }),
+  ],
+  devtool: 'cheap-eval-source-map',
 };
 if (process.env.NODE_ENV === 'production') {
   config.devtool = ''; // No sourcemap for production
