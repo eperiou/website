@@ -9,7 +9,6 @@ const OUTPUT = path.resolve(__dirname, 'Client/Output');
 const config = {
   context: path.join(__dirname, './Client'),
   entry: `${DEV}/index.jsx`,
-  // entry: path.resolve(__dirname, 'Client/index.html'),
   output: {
     path: OUTPUT,
     filename: 'myCode.js',
@@ -24,13 +23,13 @@ const config = {
         }],
       },
       {
-        test: /\.(sass|scss)$/, // Check for sass or scss file names
+        test: /\.(sass|css)$/, // Check for sass or scss file names
         use: [
           'style-loader',
           'css-loader',
-          'sass-loader',
-          'url-loader',
-          'file-loader',
+          // 'sass-loader',
+          // 'url-loader',
+          // 'file-loader',
         ],
       },
       {
@@ -55,9 +54,13 @@ const config = {
     new webpack.optimize.UglifyJsPlugin(),
     new ExtractTextPlugin('styles.css'),
     new HtmlWebpackPlugin({
+      minify: {
+        collapseWhitespace: true,
+      },
+      hash: true,
       title: 'My App',
       filename: path.resolve(OUTPUT, 'index.html'),
-      template: 'index.html',
+      template: 'index.ejs',
       inject: true,
     }),
   ],
