@@ -4,3 +4,4 @@ node_modules
 .eslintrc.js
 .Babelrc
 npm-debug.log
+Client/bower_components
