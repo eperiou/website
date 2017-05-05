@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Nav = () => (
   <nav className="navbar navbar-default">
@@ -8,7 +9,7 @@ const Nav = () => (
           type="button"
           className="navbar-toggle collapsed"
           data-toggle="collapse"
-          data-target="#bs-example-navbar-collapse-1"
+          data-target="/bs-example-navbar-collapse-1"
           aria-expanded="false"
         >
           <span className="sr-only">Toggle navigation</span>
@@ -30,15 +31,15 @@ const Nav = () => (
       <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul className="nav navbar-nav">
           <li className="active">
-            <a href="#">Portfolio <span className="sr-only">(current)</span></a>
+            <Link to="/">Portfolio <span className="sr-only">(current)</span></Link>
           </li>
-          <li><a href="#">Personal</a></li>
+          <li><Link to="/">Personal</Link></li>
         </ul>
         <ul className="nav navbar-nav navbar-right">
-          <li><a href="#">Link</a></li>
+          <li><Link to="/">Link</Link></li>
           <li className="dropdown">
-            <a
-              href="#"
+            <Link
+              to="/"
               className="dropdown-toggle"
               data-toggle="dropdown"
               role="button"
@@ -47,13 +48,13 @@ const Nav = () => (
             >
               Dropdown
               <span className="caret" />
-            </a>
+            </Link>
             <ul className="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><Link to="/">Action</Link></li>
+              <li><Link to="/">Another action</Link></li>
+              <li><Link to="/">Something else here</Link></li>
               <li role="separator" className="divider" />
-              <li><a href="#">Separated link</a></li>
+              <li><Link to="/">Separated link</Link></li>
             </ul>
           </li>
         </ul>

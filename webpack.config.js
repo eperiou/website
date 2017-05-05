@@ -8,7 +8,19 @@ const OUTPUT = path.resolve(__dirname, 'Client/Output');
 
 const config = {
   context: path.join(__dirname, './Client'),
-  entry: `${DEV}/index.jsx`,
+  entry: [
+    'react-hot-loader/patch',
+    // activate HMR for React
+
+    'webpack-dev-server/client?http://localhost:8080',
+    // bundle the client for webpack-dev-server
+    // and connect to the provided endpoint
+
+    'webpack/hot/only-dev-server',
+    // bundle the client for hot reloading
+    // only- means to only hot reload for successful updates
+    `${DEV}/index.jsx`,
+  ],
   output: {
     path: OUTPUT,
     filename: 'myCode.js',
@@ -27,9 +39,6 @@ const config = {
         use: [
           'style-loader',
           'css-loader',
-          // 'sass-loader',
-          // 'url-loader',
-          // 'file-loader',
         ],
       },
       {
@@ -47,10 +56,15 @@ const config = {
     ],
   },
   devServer: {
-    contentBase: path.resolve(__dirname, 'Client'),
+    contentBase: path.resolve(__dirname, 'Client/Output'),
     compress: true,
+    hot: true,
+    publicPath: '/',
+    historyApiFallback: true,
   },
   plugins: [
+    new webpack.NamedModulesPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
     new webpack.optimize.UglifyJsPlugin(),
     new ExtractTextPlugin('styles.css'),
     new HtmlWebpackPlugin({
@@ -64,7 +78,7 @@ const config = {
       inject: true,
     }),
   ],
-  devtool: 'cheap-eval-source-map',
+  devtool: 'inline-source-map',
 };
 if (process.env.NODE_ENV === 'production') {
   config.devtool = ''; // No sourcemap for production

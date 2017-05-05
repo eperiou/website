@@ -56,6 +56,14 @@ a {
 
 .errorpage {
   background-image: url(https://scontent-dft4-2.xx.fbcdn.net/v/t31.0-8/13765803_10105983576377005_3154732784227313719_o.jpg?oh=faba862bb71fbe3f6ec93715284211ad&oe=59B93ED9);
-  background-size: cover; }
+  background-size: cover;
+  min-height: 70em; }
+  .errorpage h1 {
+    margin-top: 0em;
+    color: #7e0c9b;
+    font-size: 7em;
+    text-align: center;
+    padding-top: 25%;
+    text-shadow: 2px 2px white; }
 
 /*# sourceMappingURL=style.css.map */

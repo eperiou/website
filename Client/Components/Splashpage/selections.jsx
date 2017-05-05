@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Selections = () => (
   <article className="presentationblocks">
@@ -15,12 +16,12 @@ const Selections = () => (
               They have been either solo or in collaboration
             </p>
             <p>
-              <a
-                href="/projects"
+              <Link
+                to="/projects"
                 className="btn btn-primary"
                 role="button"
               >Button
-             </a>
+            </Link>
             </p>
           </div>
         </div>
@@ -32,11 +33,11 @@ const Selections = () => (
             <h2>Who I am</h2>
             <p>Get to know me</p>
             <p>
-              <a
-                href="/personal"
+              <Link
+                to="/personal"
                 className="btn btn-primary"
                 role="button"
-              >Button</a>
+              >Button</Link>
             </p>
           </div>
         </div>
@@ -48,11 +49,11 @@ const Selections = () => (
             <h2>Blog</h2>
             <p>Some topics I&rsquo;ve written about</p>
             <p>
-              <a
-                href="https://medium.com/@eperiou"
+              <Link
+                to="https://medium.com/@eperiou"
                 className="btn btn-primary"
                 role="button"
-              >Blogs</a>
+              >Blogs</Link>
             </p>
           </div>
         </div>
