@@ -25,6 +25,9 @@ const config = {
     path: OUTPUT,
     filename: 'myCode.js',
   },
+  resolve: {
+    extensions: [".js", ".json",".jsx"]
+  },
   module: {
     rules: [
       {

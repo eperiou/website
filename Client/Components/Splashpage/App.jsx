@@ -1,6 +1,6 @@
 import React from 'react';
-import JumboTron from './Splashpage/JumboTron.jsx';
-import Selections from './Splashpage/selections.jsx';
+import JumboTron from './JumboTron';
+import Selections from './selections';
 
 const App = () => (
   <section>

@@ -1,19 +1,18 @@
+/* eslint no-unused-vars: ["error", { "varsIgnorePattern": "css" }]*/
+/* global document */
 import ReactDOM from 'react-dom';
 import React from 'react';
 import { AppContainer } from 'react-hot-loader';
 
-import Css from './style/style.css';
-import Routes from './Router.jsx'
-// AppContainer is a necessary wrapper component for HMR
-
-// import App from './components/App';
+import css from './style/style.css';
+import Routes from './Router';
 
 const render = (Component) => {
   ReactDOM.render(
     <AppContainer>
       <Component />
     </AppContainer>,
-    document.getElementById('app')
+    document.getElementById('app'),
   );
 };
 
@@ -25,5 +24,3 @@ if (module.hot) {
     render(Routes);
   });
 }
-
-// ReactDOM.render(<Routes /> , document.getElementById('app'));

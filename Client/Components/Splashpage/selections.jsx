@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import blog from '../assets/blog.png';
 
 const Selections = () => (
   <article className="presentationblocks">
@@ -15,14 +16,11 @@ const Selections = () => (
             <p> A sampling of some of my personal projects.
               They have been either solo or in collaboration
             </p>
-            <p>
-              <Link
-                to="/projects"
-                className="btn btn-primary"
-                role="button"
-              >Button
-            </Link>
-            </p>
+            <Link
+              to="/projects"
+              className="btn btn-primary"
+              role="button"
+            >Button</Link>
           </div>
         </div>
       </div>
@@ -32,29 +30,29 @@ const Selections = () => (
           <div className="caption">
             <h2>Who I am</h2>
             <p>Get to know me</p>
-            <p>
-              <Link
-                to="/personal"
-                className="btn btn-primary"
-                role="button"
-              >Button</Link>
-            </p>
+            <Link
+              to="/personal"
+              className="btn btn-primary"
+              role="button"
+            >Button</Link>
           </div>
         </div>
       </div>
       <div className="col-md-4 presentblock">
         <div className="thumbnail present">
-          <img className="img-circle" src="..." alt="..." />
+          <img
+            className="img-circle"
+            src={blog}
+            alt="blogphoto"
+          />
           <div className="caption fixed-bottom">
             <h2>Blog</h2>
             <p>Some topics I&rsquo;ve written about</p>
-            <p>
-              <Link
-                to="https://medium.com/@eperiou"
-                className="btn btn-primary"
-                role="button"
-              >Blogs</Link>
-            </p>
+            <Link
+              to="https://medium.com/@eperiou"
+              className="btn btn-primary"
+              role="button"
+            >Blogs</Link>
           </div>
         </div>
       </div>

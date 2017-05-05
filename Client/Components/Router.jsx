@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import createHistory from 'history/createBrowserHistory'
-import App from './App.jsx';
-import Err from './Nav/error.jsx';
-import Nav from './Nav/nav.jsx';
+import createHistory from 'history/createBrowserHistory';
+import App from './Splashpage/App';
+import Err from './Nav/error';
+import Nav from './Nav/nav';
 
 const Approutes = () =>
   <BrowserRouter
