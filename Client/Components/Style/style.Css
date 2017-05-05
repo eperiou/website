@@ -7,18 +7,21 @@ a {
   font-size: "xx-large"; }
 
 .jumbotron {
+  min-height: 70em;
+  text-align: right;
   background-image: url(https://scontent-dft4-2.xx.fbcdn.net/v/t31.0-8/11062428_10105231845571565_3157298149122899086_o.jpg?oh=ad12ce7c659d31a621fc2756498050d3&oe=59760BC5);
-  height: 50em;
   width: 100%;
   opacity: .7;
   background-size: cover; }
   .jumbotron .jumbotext {
+    font-size: 8em;
     text-align: right;
     margin-top: 25%;
     text-shadow: 2px 2px #f5f5f5;
     color: plum;
     color: rgba(88, 70, 180, 0.66); }
   .jumbotron .jumbotext2 {
+    font-size: 5em;
     text-align: right;
     text-shadow: 2px 2px #f5f5f5;
     color: plum;
@@ -30,13 +33,29 @@ a {
     font-size: 2em; }
 
 .presentationblocks {
-  text-align: center; }
-  .presentationblocks .presentblock {
-    margin-left: 4%;
-    width: 28%; }
+  text-align: center;
+  max-width: 90%;
+  padding-left: 10%; }
+  .presentationblocks .presentationtitle {
+    border-bottom: #0504af;
+    border-bottom-style: solid;
+    margin-bottom: 2em; }
+  .presentationblocks .present {
+    border: 0px;
+    background-color: #f1ebba;
+    border-bottom-style: ridge;
+    border-bottom-width: 3px;
+    border-color: #ed3724;
+    min-height: 40em; }
+  .presentationblocks img {
+    opacity: .8; }
 
-main {
-  width: 90%;
-  margin-left: 5%; }
+#app {
+  background-color: #f1ebba;
+  font-family: fantasy; }
+
+.errorpage {
+  background-image: url(https://scontent-dft4-2.xx.fbcdn.net/v/t31.0-8/13765803_10105983576377005_3154732784227313719_o.jpg?oh=faba862bb71fbe3f6ec93715284211ad&oe=59B93ED9);
+  background-size: cover; }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,15 +3,19 @@
    background-size: cover;
    width: 50px;
 }
+.container-fluid {
+}
 a {
   font-size: "xx-large"; }
 .jumbotron{
+  min-height: 70em;
+  text-align: right;
   background-image: url(https://scontent-dft4-2.xx.fbcdn.net/v/t31.0-8/11062428_10105231845571565_3157298149122899086_o.jpg?oh=ad12ce7c659d31a621fc2756498050d3&oe=59760BC5);
-  height: 50em;
   width: 100%;
   opacity: .7;
   background-size: cover;
   .jumbotext {
+    font-size: 8em;
     text-align: right;
     margin-top: 25%;
     text-shadow: 2px 2px #f5f5f5;
@@ -19,6 +23,7 @@ a {
     color: rgba(88, 70, 180, 0.66);
   }
   .jumbotext2 {
+    font-size: 5em;
     text-align: right;
     text-shadow: 2px 2px #f5f5f5;
     color: plum;
@@ -33,16 +38,30 @@ a {
 }
 .presentationblocks {
   text-align: center;
+  max-width: 90%;
+  padding-left: 10%;
   .presentationtitle {
-
+    border-bottom: rgb(5,4,175);
+    border-bottom-style: solid;
+    margin-bottom: 2em;
   }
-  .presentblock {
-    margin-left: 4%;
-    width: 28%
+  .present {
+    border: 0px;
+    background-color: rgb(241,235,186);
+    border-bottom-style: ridge;
+    border-bottom-width: 3px;
+    border-color: rgb(237,55,36);
+    min-height: 40em;
+  }
+  img {
+    opacity: .8;
   }
 }
-
-main {
-  width: 90%;
-  margin-left: 5%;
+#app {
+  background-color: rgb(241,235,186);
+  font-family: fantasy;
+}
+.errorpage {
+  background-image: url(https://scontent-dft4-2.xx.fbcdn.net/v/t31.0-8/13765803_10105983576377005_3154732784227313719_o.jpg?oh=faba862bb71fbe3f6ec93715284211ad&oe=59B93ED9);
+  background-size: cover;
 }

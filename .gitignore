@@ -5,3 +5,5 @@ node_modules
 .Babelrc
 npm-debug.log
 Client/bower_components
+.sass-cache
+Client/style/.sass-cache
