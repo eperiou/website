@@ -6,21 +6,21 @@
 a {
   font-size: "xx-large"; }
 
-.jumbotron {
+.splash-jumbo {
   min-height: 70em;
   text-align: right;
   background-image: url(https://scontent-dft4-2.xx.fbcdn.net/v/t31.0-8/11062428_10105231845571565_3157298149122899086_o.jpg?oh=ad12ce7c659d31a621fc2756498050d3&oe=59760BC5);
   width: 100%;
   opacity: .7;
   background-size: cover; }
-  .jumbotron .jumbotext {
+  .splash-jumbo .jumbotext {
     font-size: 8em;
     text-align: right;
     margin-top: 25%;
     text-shadow: 2px 2px #f5f5f5;
     color: plum;
     color: rgba(88, 70, 180, 0.66); }
-  .jumbotron .jumbotext2 {
+  .splash-jumbo .jumbotext2 {
     font-size: 5em;
     text-align: right;
     text-shadow: 2px 2px #f5f5f5;
@@ -78,5 +78,21 @@ a {
     text-align: center;
     padding-top: 25%;
     text-shadow: 2px 2px white; }
+
+.projectspage {
+  width: 90%;
+  margin-left: 5%; }
+  .projectspage .carousel {
+    height: 40em; }
+  .projectspage .jumbo-container {
+    margin-top: 5%;
+    width: 1170px;
+    padding: 5% 2% 2% 2%;
+    border-bottom-color: #7e0c9d;
+    border-bottom-style: dotted; }
+  .projectspage .project-image {
+    background-image: url(https://scontent-dft4-2.xx.fbcdn.net/v/t31.0-8/11062428_10105231845571565_3157298149122899086_o.jpg?oh=ad12ce7c659d31a621fc2756498050d3&oe=59760BC5);
+    border-radius: 5em;
+    height: 80%; }
 
 /*# sourceMappingURL=style.css.map */

@@ -7,7 +7,7 @@
 }
 a {
   font-size: "xx-large"; }
-.jumbotron{
+.splash-jumbo{
   min-height: 70em;
   text-align: right;
   background-image: url(https://scontent-dft4-2.xx.fbcdn.net/v/t31.0-8/11062428_10105231845571565_3157298149122899086_o.jpg?oh=ad12ce7c659d31a621fc2756498050d3&oe=59760BC5);
@@ -89,4 +89,33 @@ a {
     padding-top: 25%;
     text-shadow: 2px 2px white;
   }
+}
+
+.projectspage {
+  width : 90%;
+  margin-left: 5%;
+  .carousel {
+    height: 40em;
+  }
+  .jumbo-container {
+    margin-top: 5%;
+    width: 1170px;
+    padding: 5% 2% 2% 2%;
+    border-bottom-color: rgb(126,12,157);
+    border-bottom-style: dotted;
+  }
+  .project-image {
+    background-image: url(https://scontent-dft4-2.xx.fbcdn.net/v/t31.0-8/11062428_10105231845571565_3157298149122899086_o.jpg?oh=ad12ce7c659d31a621fc2756498050d3&oe=59760BC5);
+    border-radius: 5em;
+    height: 80%;
+  }
+  .project-jumbo {
+
+  }
+  // .carousel {
+  //   .img-fluid {
+  //     height: 40em;
+  //     -webkit-perspective-origin-x: 50%;
+  //   }
+  // }
 }
