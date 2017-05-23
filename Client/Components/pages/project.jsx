@@ -1,16 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 // TODO: add in prop validations
 
 
-const Projects = ({projectnumber, project: { title, captions, explanation, images } }) => (
+const Projects = ({ projectnumber, project: { title, captions, explanation, images, link } }) => (
   <article>
     <div className="container jumbo-container">
-      <h1 className="project-title">{title}</h1>
-      <div>
-        <h2 className="col-lg-4">{explanation}</h2>
-        <div id={`myCarousel${projectnumber}`} className={`carousel slide col-lg-8 ${projectnumber}`}>
+      <div className="col-lg-4">
+        <h1 className="project-title">{title}</h1>
+        <div className="project-explanation">{explanation}</div>
+      </div>
+      <div className="col-lg-4 carouselbox">
+        <div id={`myCarousel${projectnumber}`} className={`carousel slide ${projectnumber}`}>
           {/* <!-- Indicators --> */}
           <ol className="carousel-indicators">
             {images.map((caption, ind) => (
@@ -26,11 +29,21 @@ const Projects = ({projectnumber, project: { title, captions, explanation, image
             {images.map((image, ind) => (
               ind === 0 ?
                 (<div className="item active">
-                  <img className="d-block img-fluid" src={image} alt="Los Angeles" />
+                  <img
+                    className="d-block img-fluid projectphoto"
+                    key={captions[ind]}
+                    src={image}
+                    alt={captions[ind]}
+                  />
                 </div>)
               :
               (<div className="item">
-                <img className="d-block img-fluid" src={image} alt="Los Angeles" />
+                <img
+                  className="d-block img-fluid projectphoto"
+                  key={captions[ind]}
+                  src={image}
+                  alt={captions[ind]}
+                />
               </div>)
           ))}
           </div>
@@ -47,14 +60,24 @@ const Projects = ({projectnumber, project: { title, captions, explanation, image
           </a>
         </div>
         {/* <div className="col-lg-8 jumbotron project-image" /> */}
+        <p><a
+          className="btn btn-primary btn-lg"
+          href={link}
+        >Check it out Live!</a></p>
       </div>
-      <p><Link
-        className="btn btn-primary btn-lg"
-        to="http://breadcrumb.real-deal.studio"
-        role="button"
-      >Check it out Live!</Link></p>
     </div>
   </article>
 );
+
+Projects.propTypes = {
+  projectnumber: PropTypes.number.isRequired,
+  project: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    captions: PropTypes.array.isRequired,
+    explanation: PropTypes.string.isRequired,
+    images: PropTypes.array.isRequired,
+    link: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 export default Projects;

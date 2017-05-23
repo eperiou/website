@@ -18,9 +18,9 @@ const Selections = () => (
             </p>
             <Link
               to="/projects"
-              className="btn btn-primary"
+              className="btn"
               role="button"
-            >Button</Link>
+            >Projects</Link>
           </div>
         </div>
       </div>
@@ -32,9 +32,9 @@ const Selections = () => (
             <p>Get to know me</p>
             <Link
               to="/personal"
-              className="btn btn-primary"
+              className="btn"
               role="button"
-            >Button</Link>
+            >Personal</Link>
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@ const Selections = () => (
             <p>Some topics I&rsquo;ve written about</p>
             <Link
               to="https://medium.com/@eperiou"
-              className="btn btn-primary"
+              className="btn"
               role="button"
             >Blogs</Link>
           </div>
