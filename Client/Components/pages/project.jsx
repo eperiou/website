@@ -61,7 +61,7 @@ const Projects = ({ projectnumber, project: { title, captions, explanation, imag
         </div>
         {/* <div className="col-lg-8 jumbotron project-image" /> */}
         <p><a
-          className="btn btn-primary btn-lg"
+          className="btn btn-lg"
           href={link}
         >Check it out Live!</a></p>
       </div>

@@ -2,13 +2,14 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const Production = require('./webpack.prod');
 
 const DEV = path.resolve(__dirname, 'Client/Components');
 const OUTPUT = path.resolve(__dirname, 'Output');
 
 module.exports = (env) => {
   if (env) {
-    return require('./webpack.prod')
+    return Production;
   }
   return {
   // }

@@ -93,7 +93,7 @@ a {
   min-height: 70rem; }
   .errorpage h1 {
     margin-top: 0rem;
-    color: #7e0c9b;
+    color: rgba(88, 70, 180, 0.66);
     font-size: 7rem;
     text-align: center;
     padding-top: 25%;
@@ -105,6 +105,11 @@ a {
   .projectspage .carouselbox {
     text-align: right;
     min-width: 65rem; }
+    .projectspage .carouselbox .btn {
+      background-color: rgba(88, 70, 180, 0.66);
+      color: #f1ebba;
+      -webkit-box-shadow: inset 0 1px 5px 5px #7468af;
+      box-shadow: inset 0 1px 5px 5px #7468af; }
   .projectspage .project-title {
     font-size: 3rem; }
   .projectspage .project-explanation {
@@ -120,7 +125,11 @@ a {
   .projectspage .jumbo-container {
     margin-top: 5%;
     padding: 5% 2% 2% 2%;
-    border-bottom-color: #7e0c9d;
+    border-bottom-color: rgba(88, 70, 180, 0.66);
     border-bottom-style: dotted; }
+
+.thevoid {
+  background-color: #0e0d57;
+  min-height: 100px; }
 
 /*# sourceMappingURL=style.css.map */

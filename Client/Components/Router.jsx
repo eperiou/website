@@ -19,6 +19,7 @@ const Approutes = () =>
         <Route path="/projects" exact component={Projects} />
         <Route component={Err} />
       </Switch>
+      <section className="thevoid" />
     </div>
   </BrowserRouter>;
 
