@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import { AppContainer } from 'react-hot-loader';
 
-import css from './style/style.css';
+import css from './Style/style.css';
 import Routes from './Router';
 
 const render = (Component) => {
