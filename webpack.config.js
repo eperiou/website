@@ -4,7 +4,7 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const DEV = path.resolve(__dirname, 'Client/Components');
-const OUTPUT = path.resolve(__dirname, 'Client/Output');
+const OUTPUT = path.resolve(__dirname, 'Output');
 
 module.exports = (env) => {
   if (env) {
@@ -65,7 +65,7 @@ module.exports = (env) => {
       ],
     },
     devServer: {
-      contentBase: path.resolve(__dirname, 'Client/Output'),
+      contentBase: path.resolve(__dirname, 'Output'),
       compress: true,
       hot: true,
       publicPath: '/',

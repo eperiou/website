@@ -11,10 +11,10 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 
-app.use(express.static(Path.join(__dirname, '../Client/Output')));
+app.use(express.static(Path.join(__dirname, '../Output')));
 
 app.get('*', (request, response) => {
-  response.sendFile(Path.resolve(__dirname, '../Client/Output/index.html'));
+  response.sendFile(Path.resolve(__dirname, '../Output/index.html'));
 });
 
 app.listen(PORT, () => {
