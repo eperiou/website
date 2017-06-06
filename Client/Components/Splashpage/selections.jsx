@@ -48,11 +48,11 @@ const Selections = () => (
           <div className="caption fixed-bottom">
             <h2>Blog</h2>
             <p>Some topics I&rsquo;ve written about</p>
-            <Link
+            <a
               to="https://medium.com/@eperiou"
               className="btn"
               role="button"
-            >Blogs</Link>
+            >Blogs</a>
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const Production = require('./webpack.prod');
 
 const DEV = path.resolve(__dirname, 'Client/Components');
 const OUTPUT = path.resolve(__dirname, 'Output');
@@ -47,25 +48,13 @@ module.exports = {
   },
   devServer: {
     contentBase: path.resolve(__dirname, 'Output'),
-    compress: true,
+    // compress: true,
     hot: true,
     publicPath: '/',
     historyApiFallback: true,
   },
   plugins: [
-    new webpack.NamedModulesPlugin(),
-    new webpack.optimize.UglifyJsPlugin(),
     new ExtractTextPlugin('styles.css'),
-    new HtmlWebpackPlugin({
-      minify: {
-        collapseWhitespace: true,
-      },
-      hash: true,
-      title: 'My App',
-      filename: path.resolve(OUTPUT, 'index.html'),
-      template: 'index.ejs',
-      inject: true,
-    }),
   ],
   devtool: 'inline-source-map',
 };

@@ -1,21 +1,21 @@
-import breadcrumb1 from './project photos/breadcrumb1.png';
-import breadcrumb2 from './project photos/breadcrumb2.png';
-import breadcrumb3 from './project photos/breadcrumb3.png';
-import breadcrumb4 from './project photos/breadcrumb4.png';
-import breadcrumb5 from './project photos/breadcrumb5.png';
-import breadcrumb6 from './project photos/breadcrumb6.png';
-import breadcrumb7 from './project photos/breadcrumb7.png';
-import breadcrumb8 from './project photos/ar.png';
-import spurr1 from './project photos/spurr1.png';
-import spurr2 from './project photos/spurr2.png';
-import spurr4 from './project photos/spurr4.png';
-import spurr5 from './project photos/spurr5.png';
-import cookbook1 from './project photos/cookbook1.png';
-import cookbook2 from './project photos/cookbook2.png';
-import cookbook3 from './project photos/cookbook3.png';
-import whatshappenin1 from './project photos/whatshappenin1.png';
-import whatshappenin2 from './project photos/whatshappenin2.png';
-import whatshappenin3 from './project photos/whatshappenin3.png';
+const breadcrumb1 = 'http://res.cloudinary.com/eperiou/image/upload/v1496279944/breadcrumb1_rgmz5c.png';
+const breadcrumb2 = 'http://res.cloudinary.com/eperiou/image/upload/v1496279946/breadcrumb2_s4r5ub.png';
+const breadcrumb3 = 'http://res.cloudinary.com/eperiou/image/upload/v1496279946/breadcrumb3_hbtjvc.png';
+const breadcrumb4 = 'http://res.cloudinary.com/eperiou/image/upload/v1496279946/breadcrumb4_evlntf.png';
+const breadcrumb5 = 'http://res.cloudinary.com/eperiou/image/upload/v1496279945/breadcrumb5_vrn9sa.png';
+const breadcrumb6 = 'http://res.cloudinary.com/eperiou/image/upload/v1496279945/breadcrumb6_m3xccn.png';
+const breadcrumb7 = 'http://res.cloudinary.com/eperiou/image/upload/v1496279945/breadcrumb7_cxflvg.png';
+const breadcrumb8 = 'http://res.cloudinary.com/eperiou/image/upload/v1496279946/ar_y4accr.png';
+const spurr1 = 'http://res.cloudinary.com/eperiou/image/upload/v1496279941/spurr1_cxalg3.png';
+const spurr2 = 'http://res.cloudinary.com/eperiou/image/upload/v1496279941/spurr2_n2gp8h.png';
+const spurr4 = 'http://res.cloudinary.com/eperiou/image/upload/v1496279940/spurr4_ktmam9.png';
+const spurr5 = 'http://res.cloudinary.com/eperiou/image/upload/v1496279941/spurr5_awds3h.png';
+const cookbook1 = 'http://res.cloudinary.com/eperiou/image/upload/v1496279942/cookbook1_zcq8oi.png';
+const cookbook2 = 'http://res.cloudinary.com/eperiou/image/upload/v1496279943/cookbook2_o8ol1p.png';
+const cookbook3 = 'http://res.cloudinary.com/eperiou/image/upload/v1496279944/cookbook3_iihxew.png';
+const whatshappenin1 = 'http://res.cloudinary.com/eperiou/image/upload/v1496279941/whatshappenin1_lduz1d.png';
+const whatshappenin2 = 'http://res.cloudinary.com/eperiou/image/upload/v1496279941/whatshappenin2_alt8dt.png';
+const whatshappenin3 = 'http://res.cloudinary.com/eperiou/image/upload/v1496279941/whatshappenin3_ufmhvz.png';
 
 // TODO add in the captions
 

@@ -46,10 +46,7 @@ module.exports = (env) => {
         },
         {
           test: /\.(sass|css|Css)$/, // Check for sass or scss file names
-          use: [
-            'style-loader',
-            'css-loader',
-          ],
+          use: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader' }),
         },
         {
           test: /\.html$/, // Check for sass or scss file names
@@ -67,7 +64,7 @@ module.exports = (env) => {
     },
     devServer: {
       contentBase: path.resolve(__dirname, 'Output'),
-      compress: true,
+      // compress: true,
       hot: true,
       publicPath: '/',
       historyApiFallback: true,
@@ -75,7 +72,6 @@ module.exports = (env) => {
     plugins: [
       new webpack.NamedModulesPlugin(),
       new webpack.HotModuleReplacementPlugin(),
-      new webpack.optimize.UglifyJsPlugin(),
       new ExtractTextPlugin('styles.css'),
       new HtmlWebpackPlugin({
         minify: {
@@ -84,7 +80,7 @@ module.exports = (env) => {
         hash: true,
         title: 'My App',
         filename: path.resolve(OUTPUT, 'index.html'),
-        template: 'index.ejs',
+        template: 'index.html',
         inject: true,
       }),
     ],
