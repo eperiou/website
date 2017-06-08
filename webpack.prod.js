@@ -45,15 +45,7 @@ module.exports = {
       },
     ],
   },
-  devServer: {
-    contentBase: path.resolve(__dirname, 'Output'),
-    compress: true,
-    hot: true,
-    publicPath: '/',
-    historyApiFallback: true,
-  },
   plugins: [
-    new webpack.NamedModulesPlugin(),
     new webpack.optimize.UglifyJsPlugin(),
     new ExtractTextPlugin('styles.css'),
     new HtmlWebpackPlugin({
@@ -61,11 +53,11 @@ module.exports = {
         collapseWhitespace: true,
       },
       hash: true,
+      cache: true,
       title: 'My App',
       filename: path.resolve(OUTPUT, 'index.html'),
       template: 'index.ejs',
       inject: true,
     }),
   ],
-  devtool: 'inline-source-map',
 };

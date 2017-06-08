@@ -64,7 +64,6 @@ module.exports = (env) => {
     },
     devServer: {
       contentBase: path.resolve(__dirname, 'Output'),
-      // compress: true,
       hot: true,
       publicPath: '/',
       historyApiFallback: true,
@@ -77,6 +76,7 @@ module.exports = (env) => {
         minify: {
           collapseWhitespace: true,
         },
+        cache: true,
         hash: true,
         title: 'My App',
         filename: path.resolve(OUTPUT, 'index.html'),

@@ -17,8 +17,6 @@ const whatshappenin1 = 'http://res.cloudinary.com/eperiou/image/upload/v14962799
 const whatshappenin2 = 'http://res.cloudinary.com/eperiou/image/upload/v1496279941/whatshappenin2_alt8dt.png';
 const whatshappenin3 = 'http://res.cloudinary.com/eperiou/image/upload/v1496279941/whatshappenin3_ufmhvz.png';
 
-// TODO add in the captions
-
 
 module.exports = {
   data: [

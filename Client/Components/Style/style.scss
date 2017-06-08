@@ -9,9 +9,9 @@ $yellow: rgb(241,235,186);
   border-color: rgb(5,4,175);
   border-radius: 50px;
   color: $yellow;
-  .realdeallogo {
-     width: 3rem
-  }
+}
+.realdeallogo {
+   width: 3rem
 }
 
 a {
@@ -62,7 +62,9 @@ a {
     border-color: $yellow;
   }
 }
-
+.nav-tabs>li>a:hover {
+    color: $purple;
+}
 
 .presentationblocks {
   text-align: center;
@@ -104,7 +106,7 @@ a {
 #app {
   background-color: $yellow;
   font-family: serif;
-  min-height: 125rem;
+  height: 100vh;
 }
 .errorpage {
   background-image: url(https://scontent-dft4-2.xx.fbcdn.net/v/t31.0-8/13765803_10105983576377005_3154732784227313719_o.jpg?oh=faba862bb71fbe3f6ec93715284211ad&oe=59B93ED9);
@@ -163,8 +165,45 @@ a {
     border-bottom-style: dotted;
   }
 }
-
+.personalpage {
+  margin-top : 5rem;
+  width: 80%;
+  margin-left: 10%;
+  height: 85vh;
+  .personals {
+    margin-top: 3rem;
+  }
+  .image {
+    width: 35rem;
+    height: 35rem;
+  }
+}
 .thevoid {
   background-color: rgba(14,13,87,1);
-  min-height: 100px;
+  min-height: 10vh;
+}
+.contacts {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5rem;
+  height: 85vh;
+  .row {
+    padding-left: 20%;
+  }
+  .image {
+    max-height: 35rem;
+    max-width: 35rem;
+  }
+  .personaltext {
+    margin-top: 5rem
+  }
+  ul {
+    font-size: 3rem;
+  }
+  h1 {
+    font-size:5rem;
+  }
+}
+.app {
+  height: 100vh;
 }
