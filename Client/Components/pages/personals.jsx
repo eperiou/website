@@ -13,14 +13,12 @@ const Personals = ({
     return (
       <article className="personals">
         <div className="row">
-          <div className="col-xs-2 col-md-1" />
-          <div className="col-xs-10 col-md-5">
+          <div className="col-xs-12 col-md-6">
             <a href="/personals">
               <img className="media-object image" src={image} alt={header} />
             </a>
           </div>
-          <div className="col-xs-2 col-md-1" />
-          <div className="col-xs-10 col-md-5 personaltext">
+          <div className="col-xs-12 col-md-6 personaltext">
             <h1 className="media-heading">{header}</h1>
             <p>{description}</p>
           </div>
@@ -31,13 +29,11 @@ const Personals = ({
   return (
     <article className="personals">
       <div className="row">
-        <div className="col-xs-2 col-md-1" />
-        <div className="col-xs-10 col-md-5">
+        <div className="col-xs-12 col-md-6">
           <h1 className="media-heading">{header}</h1>
           <p>{description}</p>
         </div>
-        <div className="col-xs-2 col-md-1" />
-        <div className="col-xs-10 col-md-5">
+        <div className="col-xs-12 col-md-6">
           <a href="/personals">
             <img className="media-object image" src={image} alt={header} />
           </a>

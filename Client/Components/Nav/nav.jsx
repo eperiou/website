@@ -18,6 +18,7 @@ const Nav = () => (
         <Link to="/projects">Portfolio <span className="sr-only">(current)</span></Link>
       </li>
       <li><Link to="/personal">Personal</Link></li>
+      <li><Link to="/contact">Contact</Link></li>
       <li><Link to="/">Home</Link></li>
     </ul>
   </nav>
