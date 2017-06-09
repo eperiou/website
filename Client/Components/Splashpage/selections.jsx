@@ -49,8 +49,8 @@ const Selections = () => (
             <h2>Blog</h2>
             <p>Some topics I&rsquo;ve written about</p>
             <a
-              to="https://medium.com/@eperiou"
               className="btn"
+              href="https://medium.com/@eperiou"
               role="button"
             >Blogs</a>
           </div>
