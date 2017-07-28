@@ -16,7 +16,7 @@ a {
 .splash-jumbo {
   min-height: 70rem;
   text-align: right;
-  background-image: url(https://scontent-dft4-2.xx.fbcdn.net/v/t31.0-8/11062428_10105231845571565_3157298149122899086_o.jpg?oh=ad12ce7c659d31a621fc2756498050d3&oe=59760BC5);
+  background-image: url(http://res.cloudinary.com/eperiou/image/upload/v1501262864/japansplash_p6jbb7.jpg);
   width: 100%;
   opacity: .7;
   background-size: cover; }
@@ -94,7 +94,7 @@ a {
   font-family: serif; }
 
 .errorpage {
-  background-image: url(https://scontent-dft4-2.xx.fbcdn.net/v/t31.0-8/13765803_10105983576377005_3154732784227313719_o.jpg?oh=faba862bb71fbe3f6ec93715284211ad&oe=59B93ED9);
+  background-image: url(http://res.cloudinary.com/eperiou/image/upload/v1501262980/13697093_10105983576377005_3154732784227313719_n_mz7opb.jpg);
   background-size: cover;
   min-height: 70rem; }
   .errorpage h1 {

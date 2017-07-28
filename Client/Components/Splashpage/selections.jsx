@@ -26,7 +26,7 @@ const Selections = () => (
       </div>
       <div className="col-md-4 presentblock">
         <div className="thumbnail present">
-          <img className="img-circle" src="https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/17799456_10107185745455535_7636326125634574051_n.jpg?oh=93eb539aec7ff3a8b57064dca6b79a98&oe=597818B0" alt="Self-portrait" />
+          <img className="img-circle" src="http://res.cloudinary.com/eperiou/image/upload/v1501262858/Profile_ky7kat.jpg" alt="Self-portrait" />
           <div className="caption">
             <h2>Who I am</h2>
             <p>Get to know me</p>
