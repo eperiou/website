@@ -1,4 +1,4 @@
-DC_STORE
+.DS_STORE
 node_modules
 .env
 .eslintrc.js
