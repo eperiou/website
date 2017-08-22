@@ -5,7 +5,11 @@ const Contact = () =>
   <article className="contacts center">
     <div className="container">
       <div className="row">
-        <img className="col-xs-10 col-md-5 media-object image" src="https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/17799456_10107185745455535_7636326125634574051_n.jpg?oh=93eb539aec7ff3a8b57064dca6b79a98&oe=597818B0" alt="personalphoto" />
+        <img
+          className="col-xs-10 col-md-5 media-object image"
+          src="http://res.cloudinary.com/eperiou/image/upload/v1503352371/selfie_idmo3p.jpg"
+          alt="personalphoto"
+        />
         <div className="col-xs-2 col-md-1" />
         <div className="col-xs-10 col-md-5 personaltext">
           <h1 className="media-heading">Contact Me</h1>
