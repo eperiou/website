@@ -1,1 +1,2 @@
-worker: npm run production && npm start
+worker: webpack 
+worker: npm start
