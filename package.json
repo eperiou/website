@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npm test",
-    "start": "node Server/server.js",
+    "start": "webpack --env=prod && node Server/server.js",
     "production": "webpack --env=prod",
     "dev": "node_modules/.bin/webpack-dev-server --open",
     "style": "sass --watch Client/Components/Style/style.scss:Client/Components/Style/style.css"

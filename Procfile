@@ -1,2 +1,1 @@
-worker: webpack 
-worker: npm start
+web: node server/server.js 
