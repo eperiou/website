@@ -1,2 +1,2 @@
 web: webpack
-web: node server/server.js 
+web: node Server/server.js 
