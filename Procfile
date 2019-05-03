@@ -1,2 +1,1 @@
-web: webpack
-web: node Server/server.js 
+web: webpack --env=prod && node Server/server.js
